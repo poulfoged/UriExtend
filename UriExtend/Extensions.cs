@@ -22,7 +22,7 @@ namespace UriExtend
         /// <param name="url">Uri to add parameter to</param>
         /// <param name="parameters">An anonymous object which will be converted to query parameters</param>
         /// <returns></returns>
-        public static Uri Query(this Uri url, object parameters)
+        public static Uri AddQuery(this Uri url, object parameters)
         {
             var query = ToQueryString(parameters);
 

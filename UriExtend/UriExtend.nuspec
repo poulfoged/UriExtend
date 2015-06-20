@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>UriExtend</id>
+    <version>1.0.1</version>
+    <title>UriExtend</title>
+    <authors>Monzoom (Poul Foged)</authors>
+    <owners>Monzoom (Poul Foged)</owners>
+    <projectUrl>https://github.com/poulfoged/UriExtend</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/poulfoged/UriExtend/master/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extends the .NET built in Uri with a fluent interface for adding to the query string.</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>uri, uribuilder, url, query, querystring</tags>
+  </metadata>
+</package>

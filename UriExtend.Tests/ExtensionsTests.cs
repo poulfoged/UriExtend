@@ -34,7 +34,7 @@ namespace UriExtend.Tests
         {
             ////Act
             var result = source
-                .Query(parameters);
+                .AddQuery(parameters);
 
             ////Assert
             Assert.That(result, Is.EqualTo(expected));
