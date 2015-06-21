@@ -18,9 +18,11 @@ To add arguments to an existing url:
 
 ```c#
 var url = new Uri("http://example.com")
-				.Query(new { Animal = "cat" };
+				.AddQuery(new { Animal = "cat" };
+
+// Url will now be http://example.com?Animal=cat
+				
 ```
-Url will become **http://example.com?Animal=cat**
 
 Note that UriExtend just tries to fill some of the gaps - System.UriBuilder already does a fine job of modifying other parts of absolute uris with a semi-fluent interface:
 
