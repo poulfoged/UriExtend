@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
-using System.Web;
 
 namespace UriExtend
 {
@@ -45,6 +44,7 @@ namespace UriExtend
         {
             var propertyList = parameters
                 .GetType()
+                .GetTypeInfo()
                 .GetProperties()
                 .ToList();
 
@@ -76,7 +76,7 @@ namespace UriExtend
         private static object Encode(object getValue)
         {
             if (getValue is string)
-                return HttpUtility.UrlEncode((string) getValue);
+                return WebUtility.UrlEncode((string) getValue);
             
             if (getValue is bool)
                 return getValue.ToString().ToLowerInvariant();
