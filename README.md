@@ -18,7 +18,7 @@ To add arguments to an existing url:
 
 ```c#
 var url = new Uri("http://example.com")
-				.AddQuery(new { Animal = "cat" };
+				.AddQuery(new { Animal = "cat" });
 
 // Url will now be http://example.com?Animal=cat
 				
