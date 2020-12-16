@@ -24,7 +24,7 @@ namespace UriExtend.Tests
             new object[] {new Uri("http://www.example.com"), new { Arg = "with space" }, new Uri("http://www.example.com/?Arg=with+space") },
             new object[] {new Uri("http://www.example.com"), new { Arg = "with#hash" }, new Uri("http://www.example.com/?Arg=with%23hash") },
             new object[] {new Uri("http://www.example.com"), new { Arg = "# %" }, new Uri("http://www.example.com/?Arg=%23+%25") },
-            new object[] {new Uri("http://www.example.com"), new { Today = new DateTime(2000, 1, 1) }, new Uri("http://www.example.com/?Today=2000-01-01T00:00:00.0000000") },
+            new object[] {new Uri("http://www.example.com"), new { Today = new DateTime(2000, 1, 1) }, new Uri("http://www.example.com/?Today=2000-01-01T00%3A00%3A00.0000000") },
             new object[] {new Uri("http://www.example.com"), new { Number = 42 }, new Uri("http://www.example.com/?Number=42") },
             new object[] {new Uri("http://www.example.com"), new { Span = TimeSpan.FromMinutes(10)}, new Uri("http://www.example.com/?Span=00:10:00") },
         };
